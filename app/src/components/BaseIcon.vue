@@ -13,11 +13,11 @@ const props = defineProps({
     default: 'iconify',
   },
   width: {
-    type: Number,
+    type: [Number, String],
     default: 20,
   },
   height: {
-    type: Number,
+    type: [Number, String],
     default: 20,
   },
 })
