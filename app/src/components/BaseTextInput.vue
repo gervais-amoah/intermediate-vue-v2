@@ -13,6 +13,8 @@ defineProps({
     required: true,
   },
 })
+
+const textValue = defineModel<string>()
 </script>
 
 <template>
@@ -20,6 +22,12 @@ defineProps({
     <label class="label" :for="id">
       <span class="label-text font-medium">{{ label }}</span>
     </label>
-    <input :id="id" class="input input-bordered w-full" type="text" v-bind="$attrs" />
+    <input
+      :id="id"
+      class="input input-bordered w-full"
+      type="text"
+      v-model="textValue"
+      v-bind="$attrs"
+    />
   </div>
 </template>
