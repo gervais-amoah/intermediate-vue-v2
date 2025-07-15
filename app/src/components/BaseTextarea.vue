@@ -12,9 +12,13 @@ defineProps({
     type: String,
     required: true,
   },
+  placeholder: {
+    type: String,
+    required: true,
+  },
 })
 
-const textareaModel = defineModel<string>('textareaModel')
+const textareaModel = defineModel<string>()
 </script>
 
 <template>
@@ -27,6 +31,7 @@ const textareaModel = defineModel<string>('textareaModel')
       class="textarea textarea-bordered w-full"
       rows="3"
       v-model="textareaModel"
+      :placeholder="placeholder"
       v-bind="$attrs"
     ></textarea>
   </div>
