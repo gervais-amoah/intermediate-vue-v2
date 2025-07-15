@@ -46,7 +46,7 @@
       "id": "task-1",
       "weekId": "2025-W20",
       "title": "Review Vue 3 Documentation",
-      "description": "Deep dive into Composition API and new features",
+      "description": "Dive into FEM's Vue intermediate workshop",
       "areas": [
         "learning",
         "work"
@@ -55,7 +55,7 @@
       "actualMinutes": 275,
       "status": "completed",
       "createdAt": "2025-05-12T09:00:00.000Z",
-      "updatedAt": "2025-05-15T16:45:00.000Z"
+      "updatedAt": "2025-07-15T12:24:26.987Z"
     },
     {
       "id": "task-2",
@@ -320,7 +320,7 @@
       "endTime": "2025-05-14T22:05:00.000Z",
       "minutes": 185,
       "isManual": true,
-      "notes": "Research took longer than expected due to booking complications",
+      "notes": "Research took longer than expected due to booking complications :-|",
       "createdAt": "2025-05-14T22:05:00.000Z"
     }
   ]
