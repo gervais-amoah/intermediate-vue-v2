@@ -14,7 +14,8 @@ defineProps({
   },
 })
 
-const textValue = defineModel<string>()
+const firstName = defineModel<string>('firstName')
+const lastName = defineModel<string>('lastName')
 </script>
 
 <template>
@@ -26,7 +27,15 @@ const textValue = defineModel<string>()
       :id="id"
       class="input input-bordered w-full"
       type="text"
-      v-model="textValue"
+      v-model="firstName"
+      v-bind="$attrs"
+    />
+    <br />
+    <input
+      :id="id"
+      class="input input-bordered w-full"
+      type="text"
+      v-model="lastName"
       v-bind="$attrs"
     />
   </div>
